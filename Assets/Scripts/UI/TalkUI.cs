@@ -144,7 +144,8 @@ public class TalkUI : BaseUI
             }
             if (Input.GetKeyDown(KeyCode.E))
             {
-                StartCoroutine(Load_Completely_Than_Unload("FlappyBird", "SampleScene"));
+                SceneManager.LoadScene("FlappyBird");
+                //StartCoroutine(Load_Completely_Than_Unload("FlappyBird", "SampleScene"));
                 yield break; // 입력 받고 코루틴 종료
             }
 

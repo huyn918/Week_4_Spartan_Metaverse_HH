@@ -43,7 +43,8 @@ public class Flappy_Player : MonoBehaviour
                 }
                 if (Input.GetKeyDown(KeyCode.Escape))
                 {
-                    StartCoroutine(gameManager.Load_Completely_Than_Unload("SampleScene","FlappyBird"));
+                    gameManager.TestSceneLoad();
+                    //StartCoroutine(gameManager.Load_Completely_Than_Unload("SampleScene","FlappyBird"));
                 }
             }
             else

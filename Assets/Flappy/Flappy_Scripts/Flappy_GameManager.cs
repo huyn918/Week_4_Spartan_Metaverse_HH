@@ -35,6 +35,13 @@ public class Flappy_GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+
+    public void TestSceneLoad()
+    {
+        SceneManager.LoadScene("SampleScene");
+    }
+
+    
     public IEnumerator Load_Completely_Than_Unload(string loadingScene, string unLoadingScene)
     {
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(loadingScene, LoadSceneMode.Additive); // Additive로 로드
